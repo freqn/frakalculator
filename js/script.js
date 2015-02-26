@@ -31,10 +31,8 @@ $(document).ready(function(){
 
     if (ship > 0){
       $("#net").text("$" + (total - ship));
-      $("#shipped").show();
     } else {
       $("#net").text("$" + total);
-      $("#shipped").hide();
     };
 
     if ( quant > 0 || invest > 0 || sale > 0 || ship > 0) {
