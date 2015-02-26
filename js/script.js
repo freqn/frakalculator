@@ -42,6 +42,6 @@ $(document).ready(function(){
     };
   });
   $(".fa-info").on('click', function(){
-    alert("A simple profit calulator.\n\nDownload this as an app by adding to your homescreen.\n More features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.")
+    alert("A simple profit calulator.\n\nDownload this as an app by adding to your homescreen.\n\nMore features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.")
   });
 });
