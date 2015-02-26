@@ -94,6 +94,54 @@
 		color: #223333;
 	}
 	#shipped {
-		
 	}
+}
+@media only screen and (min-height : 667px){
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.wrapper {
+		margin: 8% auto;
+	}
+	input {
+		height: 60px;
+		width: 30vw;
+		font-size: 30px;
+	}
+	.result {
+		height: 60px;
+		width: 30vw;
+		font-size: 30px;
+	}
+	.label p, .value p {
+		margin-top: 12px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.wrapper {
+		margin: 4% auto;
+	}
+	input {
+		height: 65px;
+		font-size: 30px;
+	}
+	.result {
+		height: 65px;
+		font-size: 30px;
+	}
+	.label p, .value p {
+		margin-top: 12px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }
