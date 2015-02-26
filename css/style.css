@@ -62,18 +62,18 @@ Chip Eylerfreqn 7 minutes ago Init
 	input {
 		display: block;
 		margin: 20px auto;
-		width: 75%;
-		height: 40px;
+		width: 281px;
+		height: 52px;
 		font-size: 24px;
 		border: none;
 		border-radius: 5px;
 		color: #223333;
 		text-align: center;
-		background: yellow;
+		background: #FFFDBE;
 		}
 	.result {
-		width: 75%;
-		height: 40px;
+		width: 281px;
+		height: 52px;
 		margin: 20px auto;
 		font-size: 24px;
 		border-radius: 5px;
@@ -97,7 +97,7 @@ Chip Eylerfreqn 7 minutes ago Init
 	.label p, .value p {
 		clear:both;
 		text-align: center;
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 	.value {
 		float: right;
