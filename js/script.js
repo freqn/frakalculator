@@ -1,3 +1,7 @@
+document.ontouchmove = function(event){
+    event.preventDefault();
+}
+
 $(document).ready(function(){
   $("input").on("keyup",function(){
 
