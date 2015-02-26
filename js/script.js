@@ -1,6 +1,12 @@
-document.ontouchmove = function(event){
+/*document.ontouchmove = function(event){
     event.preventDefault();
-}
+}*/
+
+window.addEventListener("load",function() {
+	setTimeout(function(){
+		window.scrollTo(0, 1);
+	}, 0);
+});
 
 $(document).ready(function(){
   $("input").on("keyup",function(){
