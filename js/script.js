@@ -43,9 +43,21 @@ $(document).ready(function(){
 
     if ( quant > 0 || invest > 0 || sale > 0 || ship > 0) {
     };
+
 		if (ENV.is_iphone) {
-			$("#iphone_install").show();
-		};
+        var Xt, Vt = function() {
+                window.innerWidth < 800 ? $("#iphone_install").addClass("hidden") : $("#iphone_install").removeClass("hidden")
+            };
+        Vt(), $(window).bind("gestureend", function(e) {
+            Xt = setTimeout(Vt, 250)
+        }), $(window).bind("gesturestart", function(e) {
+            clearTimeout(Xt), $("#iphone_install").addClass("hidden")
+        }), $("#iphone_install").show().bind("touchend", function(e) {
+            e.preventDefault(), $("#iphone_install").toggleClass("open")
+        }), $("#mobile_link").remove(), $("#desktop_link").remove()
+    };
+
+
   });
   $(".fa-info").on('click', function(){
     alert("A simple profit calulator. More features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.")
