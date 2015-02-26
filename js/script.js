@@ -44,4 +44,7 @@ $(document).ready(function(){
     if ( quant > 0 || invest > 0 || sale > 0 || ship > 0) {
     };
   });
+  $(".fa-info").on('click', function(){
+    alert("A simple profit calulator. More features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.")
+  });
 });
