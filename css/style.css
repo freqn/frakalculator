@@ -144,3 +144,64 @@
 @media only screen and (min-width : 1200px) {
 
 }
+
+#iphone_install {
+  z-index: 999;
+  position: fixed;
+  bottom: -500px;
+  left: 0;
+  width: 100%;
+  height: 610px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  -webkit-transition: -webkit-transform 0.15s linear, opacity 0.15s linear;
+}
+#iphone_install .top {
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  background-color: #111;
+  font-size: 42px;
+  color: #FFF;
+  margin-bottom: 50px;
+}
+#iphone_install img.share {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px;
+  top: 10px;
+}
+#iphone_install p {
+  margin: 30px 60px;
+  text-align: center;
+  font-size: 52px;
+}
+#iphone_install p.arrow {
+  position: relative;
+  left: 12px;
+  top: -40px;
+  font-size: 92px;
+}
+#iphone_install.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+#iphone_install.open {
+  -webkit-transform: translate3d(0, -500px, 0);
+}
+#mobile_link {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 110px;
+  line-height: 110px;
+  width: 100%;
+  text-align: center;
+  background-color: #111;
+  font-size: 42px;
+}
+#mobile_link a {
+  color: #FFF;
+  text-decoration: none;
+}
