@@ -8,7 +8,9 @@ window.addEventListener("load",function() {
 	}, 0);
 });
 
+
 $(document).ready(function(){
+
   $("input").on("keyup",function(){
 
     var quant = +$("#quantity").val();
@@ -41,7 +43,9 @@ $(document).ready(function(){
       $("#net").text("$" + total);
     };
   });
-  $(".fa-info").on('click', function(){
-    alert("A simple profit calulator.\n\nDownload this as an app by adding to your homescreen.\n\nMore features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.")
+  $(".fa-info").on('click', function(event){
+		event.preventDefault();
+    alert("A simple profit calulator.\n\nDownload this as an app by adding to your homescreen.\n\nMore features coming soon.\n\nCopyright 2015 Chip Eyler\nAll Rights Reserved.");
+
   });
 });

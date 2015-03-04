@@ -14168,7 +14168,8 @@ var Timeline = function(e, t) {
                 r, s;
             t.setHours(t.getHours(), 0, 0, 0);
             for (var u = 0; u < e.length; u++) {
-                r = e[u].time, ENV.is_mobile && u == 0 ? s = 3 : s = u == 0 ? 1 : w(r);
+                r = e[u].time,
+                .is_mobile && u == 0 ? s = 3 : s = u == 0 ? 1 : w(r);
                 if (s >= 0 && s < n) {
                     var a = $("<span />").addClass("hour").css("left", s);
                     if (u == 0 || u > 1 && h(r) % 2 == 0) {

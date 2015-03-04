@@ -32,21 +32,28 @@
       <input type="text" id="shipping" placeholder="Total Shipping" title="Total Shipping">
     </section>
     <section>
-      <div class="result">
-        <div class="label"><p>Invested</p></div>
-        <div class="value" value="0"><p id="invested"></p></div>
-      </div>
-      <div class="result">
-        <div id="grossLabel" class="label"><p>Gross</p></div>
-        <div id="grossAmt" class="value"><p id="gross" value="0"></p></div>
-      </div>
-      <div id="shipped" class="result">
-        <div class="label"><p>Shipping</p></div>
-        <div id="shippedAmt"class="value"><p id="shipAmt" value="0"></p></div>
-      </div>
-      <div class="result">
-        <div class="label"><p>Net</p></div>
-        <div id="netAmt" class="value"><p id="net"></p></div>
+      <div id="card">
+        <div class="front">
+          <div class="result">
+            <div class="label"><p>Invested</p></div>
+            <div class="value" value="0"><p id="invested"></p></div>
+          </div>
+          <div class="result">
+            <div id="grossLabel" class="label"><p>Gross</p></div>
+            <div id="grossAmt" class="value"><p id="gross" value="0"></p></div>
+          </div>
+          <div id="shipped" class="result">
+            <div class="label"><p>Shipping</p></div>
+            <div id="shippedAmt"class="value"><p id="shipAmt" value="0"></p></div>
+          </div>
+          <div class="result">
+            <div class="label"><p>Net</p></div>
+            <div id="netAmt" class="value"><p id="net"></p></div>
+          </div>
+        </div>
+        <div class="back">
+          <img src="https://www.getdigital.eu/web/getdigital/gfx/products/__generated__resized/1100x1100/Aufkleber_Trollface.jpg" alt="">
+        </div>
       </div>
     </section>
 
@@ -59,31 +66,20 @@
         <p><a href=""><i class="fa fa-info"></i></a></p>
 				<!--<p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> Chip Eyler, All Rights Reserved.</p>-->
 			</div>
-      <div id="iphone_install" style="display:none">
-        <div class="top">
-          Download the Forecast mobile app for free.
-        </div>
-
-        <p>
-        Simply tap the <img class="share" src="images/iphone_share.png" /> button below, and choose "Add to Home Screen".
-        </p>
-
-        <p>
-        The mobile app will then be installed as an icon on your home screen.
-        </p>
-
-        <p class="arrow">↓</p>
-      </div>
 
       <!-- Mobile version link (for non-iPhones) -->
-      <div id="mobile_link" style="display:none">
-        <a href="?mobile=1">View the mobile version.</a>
-      </div>
     </footer>
   </div>
 
   <script src="js/jquery-1.11.2.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/flip/jquery.flip.js"></script>
+  <script>
+  $("#card").flip({
+    axis: 'y',
+    trigger: 'click'
+  });
+  </script>
 
 </body>
 </html>
