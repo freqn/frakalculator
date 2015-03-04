@@ -35,12 +35,15 @@
 	.fa-info {
 		color: #7c0000;
 	}
-	.front {height:200px}
+	.front {
+		height:200px;
+		background: transparent;
+	}
 	.back {
 		margin: 0 auto;
 		max-width: 100%;
 		height: 200px;
-		background: #b63736;
+		background: transparent;
 		text-align: center;
 	}
 	.back img {
