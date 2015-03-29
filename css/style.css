@@ -16,10 +16,6 @@
 		margin: 0;
 		font-family: 'UnifrakturCook', cursive;
 	}
-	section {
-		min-height: 270px;
-		width: 100%;
-		}
 	#copyright p {
 		margin: -140px auto;
     text-align: center;
@@ -42,6 +38,9 @@
 	.wrapper {
 		margin: 5% auto;
 		width: 100%;
+	}
+	section {
+		min-height: 200px;
 	}
 	input {
 		padding: 0;
