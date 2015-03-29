@@ -1,12 +1,8 @@
 
 /**** ASSETS ****/
 
-	@import url(http://fonts.googleapis.com/css?family=Balthazar);
-	@import url(http://fonts.googleapis.com/css?family=Lora);
 	@import url(http://fonts.googleapis.com/css?family=UnifrakturCook:700);
-
 	@font-face {font-family: Brandon; src: url('');}
-
 
 /**** PAGE ****/
 	html {
@@ -20,12 +16,10 @@
 		margin: 0;
 		font-family: 'UnifrakturCook', cursive;
 	}
-	section {display:inline -block}
-	footer a {
+	section {
+		min-height: 270px;
 		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
+		}
 	#copyright p {
 		margin: -140px auto;
     text-align: center;
@@ -34,22 +28,9 @@
   }
 	.fa-info {
 		color: #7c0000;
-	}
-	.front {
-		height:200px;
-		background: transparent;
-	}
-	.back {
+		width: 100%;
 		margin: 0 auto;
-		max-width: 100%;
-		height: 200px;
-		background: transparent;
 		text-align: center;
-	}
-	.back img {
-		height: 200px;
-		margin-top: 30px;
-		border-radius: 5px;
 	}
 
 /*================ RESPONSIVE ===================*/
@@ -60,7 +41,7 @@
 @media only screen and (min-width : 320px) {
 	.wrapper {
 		margin: 5% auto;
-		width: 100vw;
+		width: 100%;
 	}
 	input {
 		padding: 0;
@@ -162,65 +143,4 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
-}
-
-#iphone_install {
-  z-index: 999;
-  position: fixed;
-  bottom: -500px;
-  left: 0;
-  width: 100%;
-  height: 610px;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
-  -webkit-transition: -webkit-transform 0.15s linear, opacity 0.15s linear;
-}
-#iphone_install .top {
-  height: 110px;
-  line-height: 110px;
-  text-align: center;
-  background-color: #111;
-  font-size: 42px;
-  color: #FFF;
-  margin-bottom: 50px;
-}
-#iphone_install img.share {
-  display: inline-block;
-  position: relative;
-  margin: 0 15px;
-  top: 10px;
-}
-#iphone_install p {
-  margin: 30px 60px;
-  text-align: center;
-  font-size: 52px;
-}
-#iphone_install p.arrow {
-  position: relative;
-  left: 12px;
-  top: -40px;
-  font-size: 92px;
-}
-#iphone_install.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-#iphone_install.open {
-  -webkit-transform: translate3d(0, -500px, 0);
-}
-#mobile_link {
-  z-index: 999;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 110px;
-  line-height: 110px;
-  width: 100%;
-  text-align: center;
-  background-color: #111;
-  font-size: 42px;
-}
-#mobile_link a {
-  color: #FFF;
-  text-decoration: none;
 }
