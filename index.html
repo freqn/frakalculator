@@ -38,7 +38,7 @@
       </div>
       <div class="result">
         <div id="grossLabel" class="label"><p>Gross</p></div>
-        <div id="grossAmt" class="value"><p id="gross" value="0">{{cVal.quant * cVal.soldPrice | currency }}</p></div>
+        <div id="grossAmt" class="value"><p id="gross" value="0">{{(cVal.quant * cVal.soldPrice) - (cVal.quant * cVal.itemCost) | currency }}</p></div>
       </div>
       <div id="shipped" class="result">
         <div class="label"><p>Shipping</p></div>
@@ -46,7 +46,7 @@
       </div>
       <div class="result">
         <div class="label"><p>Net</p></div>
-        <div id="netAmt" class="value"><p id="net">{{(cVal.quant * cVal.soldPrice) - cVal.shipping | currency }}</p></div>
+        <div id="netAmt" class="value"><p id="net">{{(cVal.quant * cVal.soldPrice) - (cVal.quant * cVal.itemCost) - cVal.shipping | currency }}</p></div>
       </div>
     </section>
 
