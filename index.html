@@ -31,7 +31,7 @@
       <input type="text" id="sale" ng-model="cVal.soldPrice" placeholder="Unit Sale Price" title="Unit sale price">
       <input type="text" id="shipping" ng-model="cVal.shipping" placeholder="Total Shipping" title="Total Shipping">
     </section>
-    <section>
+    <section class="ng-cloak">
       <div class="result">
         <div class="label"><p>Invested</p></div>
         <div class="value" value="0"><p id="invested">{{cVal.quant * cVal.itemCost | currency }}</p></div>

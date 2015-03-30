@@ -13,6 +13,9 @@ window.addEventListener("load",function() {
       soldPrice: '',
       shipping: ''
     };
+    $scope.gross =
+        ($scope.cVal.quant * $scope.cVal.soldPrice) *
+        ($scope.cVal.quant * $scope.cVal.itemCost);
   });
   $(".fa-info").on('click', function(event){
     event.preventDefault();

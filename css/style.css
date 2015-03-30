@@ -1,8 +1,12 @@
 
-/**** ASSETS ****/
+/**** ASSETS & Defaults ****/
 
 	@import url(http://fonts.googleapis.com/css?family=UnifrakturCook:700);
 	@font-face {font-family: Brandon; src: url('');}
+
+	[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
 
 /**** PAGE ****/
 	html {
