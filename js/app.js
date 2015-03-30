@@ -13,9 +13,12 @@ window.addEventListener("load",function() {
       soldPrice: '',
       shipping: ''
     };
-    $scope.gross =
-        ($scope.cVal.quant * $scope.cVal.soldPrice) *
-        ($scope.cVal.quant * $scope.cVal.itemCost);
+    $scope.getGross = function(){
+      return ($scope.cVal.quant * $scope.cVal.soldPrice) - ($scope.cVal.quant * $scope.cVal.itemCost);
+    };
+    $scope.getNet = function (){
+      return ($scope.cVal.quant * $scope.cVal.soldPrice) - ($scope.cVal.quant * $scope.cVal.itemCost) - $scope.cVal.shipping;
+    }
   });
   $(".fa-info").on('click', function(event){
     event.preventDefault();
